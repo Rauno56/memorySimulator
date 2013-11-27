@@ -1,0 +1,34 @@
+
+#memory .block-container.ng-enter,
+#memory .block-container.ng-leave {
+  -webkit-transition: 0.5s ease-in-out all;
+  transition: 0.5s ease-in-out all;
+}
+
+.ng-enter .block,
+.ng-leave .block {
+  -webkit-transition: 0.5s ease-in-out all;
+  transition: 0.5s ease-in-out all;
+}
+
+#memory .block-container.ng-enter,
+#memory .block-container.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+
+#memory .block-container.ng-enter .block,
+#memory .block-container.ng-leave.ng-leave-active .block {
+  width: 0%;
+}
+
+#memory .block-container.ng-leave,
+#memory .block-container.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+#memory .block-container.ng-leave .block,
+#memory .block-container.ng-enter.ng-enter-active .block {
+  width: 100%;
+}
+
+
