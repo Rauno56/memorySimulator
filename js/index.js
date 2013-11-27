@@ -1,5 +1,5 @@
 
-angular.module('memorySimulator', ['ngRoute', 'ngAnimate']).value('config', {
+angular.module('memorySimulator', ['ngAnimate']).value('config', {
   memory: {
     size: 30
   },
